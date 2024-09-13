@@ -1,0 +1,127 @@
+// #1
+
+const contador = 1;
+
+if (true){
+  const contador = 5;
+  console.log(contador);
+}
+console.log (contador);
+
+// #2
+const persona ={ 
+  nombre: "ronald ", 
+  apellido: "benitez"
+
+}
+
+persona.nombre = "fernando"
+console.log(persona.nombre);
+
+// objertosliterales y optional chaining operator 
+
+const frutas = ["pera","manzana","uva"]
+
+console.log (frutas[2])
+
+
+// objetos literales, no indexados 
+
+const animal = {
+  color:"naranja",
+  nombre:"simba",
+  rugiendo: true
+}
+
+console.log("este leon es de color "+ animal.color);
+console.log("y su nombre es "+animal.nombre)
+
+console.log(animal["rugiendo"]);
+
+
+
+
+
+// %
+
+const tareas ={
+  "235991-83hhew":{
+    title: "tarea #01"
+  }
+}
+
+console.log(tareas["235991-83hhew"].title);
+
+
+
+// objetos literales, no indexados 
+
+const animal = {
+  color:"naranja",
+  nombre:"simba",
+  rugiendo: true,
+  favorito:{
+    dia:{
+      ok:true,
+    },
+    noche:{
+      ok:false
+    }
+  }
+  
+}
+
+console.log(animal.favorito?.dia?.ok);
+
+
+// destructuring
+
+const animal = {
+  color:"naranja",
+  nombre:"simba",
+  rugiendo: true,
+  favorito:{
+    dia:{
+      ok:true,
+    },
+    noche:{
+      ok:false
+    }
+  }
+  
+}
+
+// guardar el valor de la propieda color en una constante 
+const color = animal.color;
+const nombre = animal.nombre;
+
+console.log("color: " + color + ", animal: "+ nombre);
+
+
+
+// destructuring
+
+const animal = {
+  color:"azul",
+  nombre:"torogoz",
+  volando: true
+ 
+}
+
+//destructuring objetos literales 
+
+const {color, nombre, volando } = animal;
+
+console.log("El " + nombre + " es de color: " + color);
+
+//arrays indexados
+const frutas = ["pera", "manzana", "sandia"];
+
+//destructuring array
+
+const [pera, manzan, sandia ] = frutas;
+console.log ("A mi me gusta mucho la "+ pera);
+
+
+ 
+
